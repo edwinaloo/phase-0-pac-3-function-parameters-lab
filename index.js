@@ -1,8 +1,12 @@
-function introduction(Edwin) {
-    return `Hi, my name is ${Edwin}.`;
-  }
-  function introductionWithLanguage(Edwin, Python ) {
-    return `Hi, my name is ${Edwin} and I am learning to program in ${Python}.`;
-  }
-  
-  
+function introduction(name){
+  console.log(`Hi,my name is ${name}.`);
+}
+function introductionWithLanguage(name, language){
+  console.log(`Hi, my name is ${name} and i am learning to code ${language}.`);
+}
+function helloToSay(name, language = "javas"){
+  console.log(`hello, my name is ${name} and i am learning to codein ${language}`);
+}
+introduction("Edwin")
+introductionWithLanguage("Edwin", "Python")
+helloToSay("Edwin")
